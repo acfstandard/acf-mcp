@@ -1,0 +1,23 @@
+{
+  "framework_version": "1.0",
+  "content_build": "2026-06-08T08:59:41.398Z",
+  "content_hash": "sha256:f79fac12251e850421f4c2da342ae450053cb52414eb7f249bfb2e1e93e25f10",
+  "permanent_archive_url": "https://archive.acfstandard.com/doctrine/v1.0/",
+  "rules_version": "2026-06",
+  "locales": [
+    "fr",
+    "en",
+    "es",
+    "de",
+    "pt",
+    "it",
+    "nl",
+    "ru",
+    "ar",
+    "tr",
+    "ja",
+    "zh",
+    "ko"
+  ],
+  "fallback_locale": "en"
+}

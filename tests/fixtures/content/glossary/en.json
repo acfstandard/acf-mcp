@@ -1,0 +1,9 @@
+[
+  {
+    "term": "DDAO",
+    "expansion": "Delegated Decision Agent Officer",
+    "definition": "Canonical ACF® governance role.",
+    "related_principles": ["P3"],
+    "related_fiches": ["ACF-12"]
+  }
+]

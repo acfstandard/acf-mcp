@@ -1,0 +1,16 @@
+{
+  "title": { "fr": "DDAO — Delegated Decision Agent Officer", "en": "DDAO — Delegated Decision Agent Officer" },
+  "expansion": "Delegated Decision Agent Officer",
+  "definition": {
+    "fr": "Rôle de gouvernance défini par ACF® qui agit comme gardien légal d'un ou plusieurs agents IA autonomes. Le DDAO valide le mandat de l'agent (cf. ACF-12), arbitre les escalades qui franchissent les seuils définis, autorise les évolutions du périmètre de décision et porte la responsabilité opérationnelle de l'agent vis-à-vis du COMEX et des régulateurs.",
+    "en": "ACF®-defined governance role that acts as the legal guardian of one or more autonomous AI agents. The DDAO validates the agent mandate (cf. ACF-12), arbitrates escalations that cross defined thresholds, authorises decision-perimeter changes, and carries operational accountability for the agent vis-à-vis the executive committee and regulators."
+  },
+  "responsibilities": {
+    "fr": "1. Approuver le mandat initial avant go-live.\n2. Arbitrer toute escalade hors-seuil dans les délais convenus.\n3. Réviser le mandat à fréquence prédéfinie (trimestre minimum pour criticité haute).\n4. Suspendre l'agent en cas de dérive observée.\n5. Reporter à l'instance de gouvernance compétente.\n6. Conserver la traçabilité des décisions humaines prises en réaction aux remontées de l'agent.",
+    "en": "1. Approve the initial mandate before go-live.\n2. Arbitrate any out-of-threshold escalation within agreed deadlines.\n3. Review the mandate at predefined frequency (quarterly minimum for high criticality).\n4. Suspend the agent in case of observed drift.\n5. Report to the competent governance body.\n6. Retain traceability of human decisions taken in reaction to agent escalations."
+  },
+  "not_to_be_confused_with": {
+    "fr": "Le DDAO n'est ni le DPO (qui couvre la protection des données personnelles), ni le RSSI (qui couvre la sécurité de l'information), ni le métier sponsor (qui porte le besoin business). Il est le rôle dédié à la gouvernance opérationnelle de l'autonomie agentique. Une même personne peut cumuler plusieurs rôles selon la taille de l'organisation, mais le rôle DDAO doit être identifié explicitement.",
+    "en": "The DDAO is neither the DPO (covers personal data protection), nor the CISO (covers information security), nor the business sponsor (carries the business need). It is the role dedicated to the operational governance of agentic autonomy. The same person may hold multiple roles in smaller organisations, but the DDAO role must be explicitly identified."
+  }
+}

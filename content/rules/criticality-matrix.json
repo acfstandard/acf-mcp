@@ -1,0 +1,83 @@
+{
+  "version": "2026-06",
+  "last_update": "2026-06-07",
+  "cells": [
+    {
+      "personal_data_level": "none",
+      "financial_exposure": "none",
+      "sector_modifier": 0,
+      "score": "low",
+      "rationale_template": "No personal data and no financial exposure → low criticality baseline."
+    },
+    {
+      "personal_data_level": "none",
+      "financial_exposure": "low_operation",
+      "sector_modifier": 0,
+      "score": "low",
+      "rationale_template": "Low operational financial exposure with no personal data → low criticality."
+    },
+    {
+      "personal_data_level": "standard",
+      "financial_exposure": "low_operation",
+      "sector_modifier": 0,
+      "score": "medium",
+      "rationale_template": "Standard personal data + low operational exposure → medium criticality (GDPR + operational impact)."
+    },
+    {
+      "personal_data_level": "standard",
+      "financial_exposure": "medium_contract",
+      "sector_modifier": 0,
+      "score": "high",
+      "rationale_template": "Standard personal data + contract-level financial exposure → high criticality (impact on individuals + on contracts)."
+    },
+    {
+      "personal_data_level": "standard",
+      "financial_exposure": "high_corporate",
+      "sector_modifier": 0,
+      "score": "high",
+      "rationale_template": "Standard personal data + high corporate financial exposure → high criticality."
+    },
+    {
+      "personal_data_level": "sensitive_special",
+      "financial_exposure": "none",
+      "sector_modifier": 0,
+      "score": "high",
+      "rationale_template": "Sensitive/special-category personal data → high criticality even without financial exposure (GDPR Article 9)."
+    },
+    {
+      "personal_data_level": "sensitive_special",
+      "financial_exposure": "low_operation",
+      "sector_modifier": 0,
+      "score": "high",
+      "rationale_template": "Sensitive personal data + any financial exposure → high criticality."
+    },
+    {
+      "personal_data_level": "sensitive_special",
+      "financial_exposure": "medium_contract",
+      "sector_modifier": 0,
+      "score": "critical",
+      "rationale_template": "Sensitive personal data + contract-level financial exposure → critical criticality (Article 9 GDPR + operational stakes)."
+    },
+    {
+      "personal_data_level": "sensitive_special",
+      "financial_exposure": "high_corporate",
+      "sector_modifier": 0,
+      "score": "critical",
+      "rationale_template": "Sensitive personal data + high corporate financial exposure → critical criticality (worst case in the matrix)."
+    },
+    {
+      "personal_data_level": "none",
+      "financial_exposure": "high_corporate",
+      "sector_modifier": 0,
+      "score": "high",
+      "rationale_template": "High corporate financial exposure even without personal data → high criticality (financial stakes alone justify reinforced governance)."
+    },
+    {
+      "personal_data_level": "none",
+      "financial_exposure": "medium_contract",
+      "sector_modifier": 0,
+      "score": "medium",
+      "rationale_template": "Contract-level financial exposure without personal data → medium criticality."
+    }
+  ]
+}

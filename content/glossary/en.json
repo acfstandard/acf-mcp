@@ -1,0 +1,96 @@
+[
+  {
+    "term": "ACF",
+    "expansion": "Agentic Commerce Framework",
+    "definition": "First open governance standard for autonomous AI agents. Defines the 4 principles, 4 autonomy levels, 6 maturity dimensions, the DDAO role and 17 methodological cards.",
+    "related_principles": ["P1", "P2", "P3", "P4"],
+    "related_fiches": ["ACF-00"]
+  },
+  {
+    "term": "DDAO",
+    "expansion": "Delegated Decision Agent Officer",
+    "definition": "ACF®-defined governance role acting as legal guardian of one or more autonomous AI agents. The DDAO approves the mandate, arbitrates out-of-threshold escalations and carries operational accountability for the agent.",
+    "related_principles": ["P3", "P4"],
+    "related_fiches": ["ACF-12"]
+  },
+  {
+    "term": "Agent Mandate",
+    "definition": "Formal document bounding an autonomous agent's decision perimeter, escalation thresholds, technical safeguards and traceability obligations. Cf. ACF-12.",
+    "related_principles": ["P1"],
+    "related_fiches": ["ACF-12", "ACF-03"]
+  },
+  {
+    "term": "Decision Sovereignty",
+    "definition": "ACF® principle P1. The organisation retains ultimate accountability for the decisions taken by its AI agents. Operational delegation never entails responsibility delegation.",
+    "related_principles": ["P1"],
+    "related_fiches": ["ACF-00"]
+  },
+  {
+    "term": "Doctrinal Traceability",
+    "definition": "ACF® principle P2. Every automated decision must be reconstructible after the fact by pointing to the doctrine, rules and data that produced it.",
+    "related_principles": ["P2"],
+    "related_fiches": ["ACF-05"]
+  },
+  {
+    "term": "Kill switch",
+    "definition": "Human takeover mechanism allowing an agent to be frozen, redirected or revoked at any time. Multi-level: immediate suspension, deferred suspension, permanent revocation. Cf. ACF-07.",
+    "related_principles": ["P3"],
+    "related_fiches": ["ACF-07", "ACF-14"]
+  },
+  {
+    "term": "Autonomy level",
+    "definition": "ACF® scale N0 → N3 qualifying an agent's action latitude: N0 assistance, N1 supervised recommendation, N2 conditional execution, N3 autonomous execution.",
+    "related_principles": ["P4"],
+    "related_fiches": ["ACF-01"]
+  },
+  {
+    "term": "Criticality",
+    "definition": "ACF® measure of the potential impact of an agentic decision on the business, legal, human or financial dimension. The ACF-02 matrix crosses dimension × business impact to produce a low/medium/high/critical score.",
+    "related_principles": ["P4"],
+    "related_fiches": ["ACF-02", "ACF-11"]
+  },
+  {
+    "term": "GPAI",
+    "expansion": "General Purpose AI",
+    "definition": "Category introduced by the AI Act (Art. 51-55) covering general-purpose foundation models. An agent relying on a GPAI inherits Article 53 obligations and — if the GPAI is systemic-risk — Article 55 obligations.",
+    "related_principles": [],
+    "related_fiches": ["ACF-11"]
+  },
+  {
+    "term": "Provider",
+    "definition": "Under the AI Act, the entity that develops or has developed an AI system and places it on the market or puts it into service under its own name. The provider carries most of the obligations for high-risk systems.",
+    "related_principles": [],
+    "related_fiches": ["ACF-11"]
+  },
+  {
+    "term": "Deployer",
+    "definition": "Under the AI Act, the entity using an AI system under its authority (other than for personal use). The deployer carries its own obligations (notably Articles 26 and 27 for high-risk systems).",
+    "related_principles": [],
+    "related_fiches": ["ACF-11"]
+  },
+  {
+    "term": "Controller",
+    "definition": "Under the GDPR, the entity determining the purposes and means of the processing of personal data. An autonomous AI agent does not erase the controller qualification — it operationalises it.",
+    "related_principles": [],
+    "related_fiches": ["ACF-13"]
+  },
+  {
+    "term": "DPIA",
+    "expansion": "Data Protection Impact Assessment",
+    "definition": "Impact assessment required by Article 35 GDPR for processing operations at high risk to rights and freedoms. Often mandatory for high-risk AI agents.",
+    "related_principles": ["P2"],
+    "related_fiches": ["ACF-11"]
+  },
+  {
+    "term": "Decision Register",
+    "definition": "Time-stamped, immutable log recording every decision taken by an autonomous agent, with structured inputs, output, applied doctrine version and rationale. Cf. ACF-05.",
+    "related_principles": ["P2"],
+    "related_fiches": ["ACF-05"]
+  },
+  {
+    "term": "Article 49",
+    "definition": "AI Act article creating a public register of high-risk AI systems. The deployer or provider must register the system before putting it into service. The registration content must be consistent with the internal decision register.",
+    "related_principles": [],
+    "related_fiches": ["ACF-05", "ACF-11"]
+  }
+]

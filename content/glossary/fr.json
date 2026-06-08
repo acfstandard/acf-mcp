@@ -1,0 +1,96 @@
+[
+  {
+    "term": "ACF",
+    "expansion": "Agentic Commerce Framework",
+    "definition": "Premier standard ouvert de gouvernance pour agents IA autonomes. Pose les 4 principes, 4 niveaux d'autonomie, 6 dimensions de maturité, le rôle DDAO et 17 fiches méthodologiques.",
+    "related_principles": ["P1", "P2", "P3", "P4"],
+    "related_fiches": ["ACF-00"]
+  },
+  {
+    "term": "DDAO",
+    "expansion": "Delegated Decision Agent Officer",
+    "definition": "Rôle de gouvernance défini par ACF® qui agit comme gardien légal d'un ou plusieurs agents IA autonomes. Le DDAO valide le mandat, arbitre les escalades hors-seuils et porte la responsabilité opérationnelle de l'agent.",
+    "related_principles": ["P3", "P4"],
+    "related_fiches": ["ACF-12"]
+  },
+  {
+    "term": "Mandat d'agent",
+    "definition": "Document formel qui borne le périmètre de décision d'un agent autonome, ses seuils d'escalade, ses garde-fous techniques et ses obligations de traçabilité. Cf. ACF-12.",
+    "related_principles": ["P1"],
+    "related_fiches": ["ACF-12", "ACF-03"]
+  },
+  {
+    "term": "Souveraineté décisionnelle",
+    "definition": "Principe ACF® P1. L'organisation conserve la responsabilité ultime des décisions prises par ses agents IA. La délégation opérationnelle n'emporte jamais délégation de responsabilité.",
+    "related_principles": ["P1"],
+    "related_fiches": ["ACF-00"]
+  },
+  {
+    "term": "Traçabilité doctrinale",
+    "definition": "Principe ACF® P2. Toute décision automatisée doit pouvoir être reconstituée a posteriori en pointant la doctrine, les règles et les données qui l'ont produite.",
+    "related_principles": ["P2"],
+    "related_fiches": ["ACF-05"]
+  },
+  {
+    "term": "Kill switch",
+    "definition": "Dispositif de reprise humaine permettant de geler, infléchir ou révoquer un agent à tout instant. Multi-niveaux : suspension immédiate, suspension différée, révocation définitive. Cf. ACF-07.",
+    "related_principles": ["P3"],
+    "related_fiches": ["ACF-07", "ACF-14"]
+  },
+  {
+    "term": "Niveau d'autonomie",
+    "definition": "Échelle ACF® N0 → N3 qui qualifie la latitude d'action d'un agent : N0 assistance, N1 recommandation supervisée, N2 exécution conditionnelle, N3 exécution autonome.",
+    "related_principles": ["P4"],
+    "related_fiches": ["ACF-01"]
+  },
+  {
+    "term": "Criticité",
+    "definition": "Mesure ACF® de l'impact potentiel d'une décision agentique sur la dimension métier, juridique, humaine ou financière. La matrice ACF-02 croise dimension × business impact pour produire le score low/medium/high/critical.",
+    "related_principles": ["P4"],
+    "related_fiches": ["ACF-02", "ACF-11"]
+  },
+  {
+    "term": "GPAI",
+    "expansion": "General Purpose AI",
+    "definition": "Catégorie introduite par l'AI Act (Art. 51-55) qui désigne les modèles de fondation à usage général. Un agent qui s'appuie sur un GPAI hérite d'obligations Article 53 et — si le GPAI est à risque systémique — Article 55.",
+    "related_principles": [],
+    "related_fiches": ["ACF-11"]
+  },
+  {
+    "term": "Provider",
+    "definition": "Au sens de l'AI Act, l'entité qui développe ou fait développer un système d'IA et le met sur le marché ou en service sous son nom. Le provider porte la majorité des obligations de l'AI Act sur les systèmes à haut risque.",
+    "related_principles": [],
+    "related_fiches": ["ACF-11"]
+  },
+  {
+    "term": "Deployer",
+    "definition": "Au sens de l'AI Act, l'entité qui utilise un système d'IA sous son autorité (autre qu'à titre personnel). Le deployer porte des obligations propres (notamment Article 26 et 27 pour les systèmes à haut risque).",
+    "related_principles": [],
+    "related_fiches": ["ACF-11"]
+  },
+  {
+    "term": "Controller",
+    "definition": "Au sens du RGPD, l'entité qui détermine les finalités et les moyens du traitement de données personnelles. Un agent IA autonome n'efface pas la qualification de controller — il l'opérationnalise.",
+    "related_principles": [],
+    "related_fiches": ["ACF-13"]
+  },
+  {
+    "term": "DPIA",
+    "expansion": "Data Protection Impact Assessment",
+    "definition": "Évaluation d'impact prévue par l'Article 35 du RGPD pour les traitements à risque élevé pour les droits et libertés. Souvent obligatoire pour les agents IA à haut risque.",
+    "related_principles": ["P2"],
+    "related_fiches": ["ACF-11"]
+  },
+  {
+    "term": "Registre des décisions",
+    "definition": "Journal horodaté et immuable qui consigne chaque décision prise par un agent autonome, avec les inputs structurés, l'output, la version de doctrine appliquée et le rationale. Cf. ACF-05.",
+    "related_principles": ["P2"],
+    "related_fiches": ["ACF-05"]
+  },
+  {
+    "term": "Article 49",
+    "definition": "Article de l'AI Act qui crée un registre public des systèmes IA à haut risque. Le deployer ou le provider doit y inscrire le système avant mise en service. Le contenu de l'inscription doit être cohérent avec le registre interne de décisions.",
+    "related_principles": [],
+    "related_fiches": ["ACF-05", "ACF-11"]
+  }
+]

@@ -1,0 +1,38 @@
+{
+  "version": "2026-06",
+  "last_update": "2026-06-07",
+  "thresholds": [
+    {
+      "level": "N0",
+      "conditions": {
+        "human_approval_required": ["always"],
+        "external_actions": ["none", "read_only"]
+      },
+      "rationale_template": "Human approval required for every action and external surface is read-only or absent → the agent suggests, the human decides."
+    },
+    {
+      "level": "N1",
+      "conditions": {
+        "human_approval_required": ["always"],
+        "external_actions": ["limited_write"]
+      },
+      "rationale_template": "Human approval required on every action with limited write access → supervised recommendation pattern."
+    },
+    {
+      "level": "N2",
+      "conditions": {
+        "human_approval_required": ["sometimes"],
+        "external_actions": ["limited_write", "full_write"]
+      },
+      "rationale_template": "Conditional human approval, write actions allowed within a bounded perimeter → conditional execution (mandate required)."
+    },
+    {
+      "level": "N3",
+      "conditions": {
+        "human_approval_required": ["never"],
+        "external_actions": ["full_write"]
+      },
+      "rationale_template": "No prior human approval and full write capabilities → autonomous execution (reinforced governance required)."
+    }
+  ]
+}

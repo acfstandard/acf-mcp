@@ -1,0 +1,85 @@
+{
+  "name": "acf-mcp",
+  "version": "1.0.2",
+  "mcpName": "io.github.aiconsulting06000-tech/acf-mcp",
+  "description": "Official ACF® Model Context Protocol server — Agentic Commerce Framework governance copilot for AI assistants.",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    },
+    "./transport/http": {
+      "import": "./dist/transport/http.js",
+      "types": "./dist/transport/http.d.ts"
+    },
+    "./lib/rate-limit": {
+      "import": "./dist/lib/rate-limit.js",
+      "types": "./dist/lib/rate-limit.d.ts"
+    },
+    "./package.json": "./package.json"
+  },
+  "bin": {
+    "acf-mcp": "dist/transport/stdio.js"
+  },
+  "files": [
+    "dist/",
+    "content/",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "dev": "tsup --watch",
+    "build:hash": "tsx scripts/inject-meta-hash.ts",
+    "build:index": "tsx scripts/build-search-index.ts",
+    "build": "npm run build:hash && tsup && npm run build:index",
+    "validate-content": "tsx scripts/validate-content.ts",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "typecheck": "tsc --noEmit",
+    "inspect:stdio": "mcp-inspector node ./dist/transport/stdio.js",
+    "inspect:http": "mcp-inspector http://localhost:3000/api/mcp"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aiconsulting06000-tech/acf-mcp.git"
+  },
+  "homepage": "https://github.com/aiconsulting06000-tech/acf-mcp#readme",
+  "bugs": {
+    "url": "https://github.com/aiconsulting06000-tech/acf-mcp/issues"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "acf",
+    "agentic-commerce-framework",
+    "ai-governance",
+    "ai-act",
+    "gdpr",
+    "compliance",
+    "ddao"
+  ],
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.0",
+    "gray-matter": "^4.0.3",
+    "lunr": "^2.3.9",
+    "remark": "^15.0.1",
+    "remark-stringify": "^11.0.0",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@modelcontextprotocol/inspector": "^0.5.0",
+    "@types/lunr": "^2.3.7",
+    "@types/node": "^20",
+    "tsup": "^8",
+    "tsx": "^4.7.0",
+    "typescript": "^5",
+    "vitest": "^2"
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "version": "2026-06",
+  "last_update": "2026-06-07",
+  "triggers": {
+    "keyword_patterns": [
+      "llm", "large language model", "foundation model", "modèle de fondation",
+      "generative ai", "ia générative", "gpt", "claude", "llama", "mistral",
+      "prompt", "embedding model"
+    ],
+    "enum_match": { "gpai_used": ["true"] },
+    "negation_aware": true
+  },
+  "obligations": [
+    {
+      "article": "art-50",
+      "requirement": "Transparency obligations on AI systems intended to interact with natural persons (clear notice that the user is interacting with an AI system, unless obvious from context).",
+      "applicable_date": "2026-08-02"
+    },
+    {
+      "article": "art-51",
+      "requirement": "Classification of GPAI models and identification of systemic-risk models.",
+      "applicable_date": "2026-08-02"
+    },
+    {
+      "article": "art-53",
+      "requirement": "Technical documentation, training data summary, copyright policy, instructions for downstream providers.",
+      "applicable_date": "2026-08-02"
+    },
+    {
+      "article": "art-54",
+      "requirement": "Authorised representative requirement for non-EU GPAI providers placing models on the EU market.",
+      "applicable_date": "2026-08-02"
+    },
+    {
+      "article": "art-55",
+      "requirement": "Additional obligations for systemic-risk GPAI: model evaluations, adversarial testing, incident reporting, cybersecurity protection.",
+      "applicable_date": "2026-08-02",
+      "systemic_risk_only": true
+    }
+  ]
+}

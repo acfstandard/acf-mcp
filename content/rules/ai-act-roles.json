@@ -1,0 +1,52 @@
+{
+  "version": "2026-06",
+  "last_update": "2026-06-07",
+  "rules": [
+    {
+      "id": "ai-act-role-provider-build-and-sell",
+      "triggers": {
+        "keyword_patterns": [
+          "we sell", "nous vendons", "we license", "nous licencions",
+          "saas", "we offer", "nous proposons", "product offering"
+        ],
+        "enum_match": { "usage_audience": ["third_party_b2b", "public_consumer"] },
+        "negation_aware": true
+      },
+      "role": "provider",
+      "confidence_base": "medium",
+      "rationale_template": "The system is built and placed on the market or put into service under the entity's name → provider."
+    },
+    {
+      "id": "ai-act-role-provider-build-internal-rebrand",
+      "triggers": {
+        "keyword_patterns": [
+          "white label", "marque blanche", "rebranded", "sous notre nom"
+        ],
+        "negation_aware": true
+      },
+      "role": "provider",
+      "confidence_base": "medium",
+      "rationale_template": "The system is rebranded under the entity's name and re-placed on the market → provider responsibilities apply."
+    },
+    {
+      "id": "ai-act-role-deployer-internal-use",
+      "triggers": {
+        "enum_match": { "usage_audience": ["internal"] },
+        "negation_aware": true
+      },
+      "role": "deployer",
+      "confidence_base": "high",
+      "rationale_template": "Internal use of a third-party AI system → deployer."
+    },
+    {
+      "id": "ai-act-role-not-applicable",
+      "triggers": {
+        "enum_match": { "ai_act_triggers": ["none"] },
+        "negation_aware": true
+      },
+      "role": "not_applicable",
+      "confidence_base": "medium",
+      "rationale_template": "No Annex III or Annex I trigger declared → AI Act high-risk obligations likely not applicable, but transparency obligations (Art. 50) may still apply for GPAI usage."
+    }
+  ]
+}

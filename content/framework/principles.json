@@ -1,0 +1,77 @@
+{
+  "version": "1.0",
+  "principles": [
+    {
+      "id": "P1",
+      "code": "P1",
+      "title": {
+        "fr": "Souveraineté décisionnelle",
+        "en": "Decision Sovereignty"
+      },
+      "summary": {
+        "fr": "L'organisation conserve la responsabilité ultime des décisions prises par ses agents IA, quel que soit leur niveau d'autonomie.",
+        "en": "The organisation retains ultimate responsibility for the decisions taken by its AI agents, whatever their autonomy level."
+      },
+      "doctrine": {
+        "fr": "## Principe\n\nUn agent IA autonome ne déplace jamais la responsabilité décisionnelle hors de l'organisation. La délégation opérationnelle (l'agent agit) n'emporte pas délégation de responsabilité (l'organisation répond).\n\n## Implications opérationnelles\n\n- Tout agent est rattaché à un DDAO (Delegated Decision Agent Officer) identifié.\n- Tout périmètre de décision est borné par un mandat écrit (cf. ACF-12).\n- Tout franchissement de seuil critique remonte à un humain (cf. ACF-09).",
+        "en": "## Principle\n\nAn autonomous AI agent never moves decision accountability outside the organisation. Operational delegation (the agent acts) does not entail responsibility delegation (the organisation answers).\n\n## Operational implications\n\n- Every agent is attached to an identified DDAO (Delegated Decision Agent Officer).\n- Every decision perimeter is bounded by a written mandate (cf. ACF-12).\n- Every critical threshold breach escalates to a human (cf. ACF-09)."
+      },
+      "related_fiches": ["ACF-00", "ACF-03", "ACF-12"],
+      "related_dimensions": ["D1", "D4"]
+    },
+    {
+      "id": "P2",
+      "code": "P2",
+      "title": {
+        "fr": "Traçabilité doctrinale",
+        "en": "Doctrinal Traceability"
+      },
+      "summary": {
+        "fr": "Toute décision automatisée doit pouvoir être reconstituée a posteriori en pointant la doctrine, les règles et les données qui l'ont produite.",
+        "en": "Every automated decision must be reconstructible after the fact by pointing to the doctrine, rules and data that produced it."
+      },
+      "doctrine": {
+        "fr": "## Principe\n\nUne décision agentique sans piste d'audit reconstituable est juridiquement indéfendable. ACF® impose qu'à chaque instant T, l'organisation puisse répondre à la question : « quelle version de la doctrine, quelles règles et quelles données ont produit cette décision ? »\n\n## Implications opérationnelles\n\n- Registre de décisions horodaté (cf. ACF-05).\n- Versionnement de la doctrine (`doctrine_version`, `doctrine_hash`, `doctrine_archive_url`).\n- Conservation des inputs et outputs structurés selon les durées légales applicables.",
+        "en": "## Principle\n\nAn agentic decision without a reconstructible audit trail is legally indefensible. ACF® mandates that, at any time T, the organisation can answer the question: 'which doctrine version, which rules and which data produced this decision?'\n\n## Operational implications\n\n- Time-stamped decision register (cf. ACF-05).\n- Doctrine versioning (`doctrine_version`, `doctrine_hash`, `doctrine_archive_url`).\n- Retention of structured inputs and outputs for the applicable legal periods."
+      },
+      "related_fiches": ["ACF-05", "ACF-10", "ACF-13"],
+      "related_dimensions": ["D2", "D5"]
+    },
+    {
+      "id": "P3",
+      "code": "P3",
+      "title": {
+        "fr": "Contrôle humain ultime",
+        "en": "Ultimate Human Control"
+      },
+      "summary": {
+        "fr": "Tout agent autonome doit comporter un dispositif de reprise humaine activable à tout moment et calibré sur la criticité.",
+        "en": "Every autonomous agent must include a human takeover mechanism, activatable at any time and calibrated to criticality."
+      },
+      "doctrine": {
+        "fr": "## Principe\n\nL'autonomie d'un agent est un privilège conditionnel, jamais un droit acquis. À tout instant, un opérateur habilité doit pouvoir geler, infléchir ou révoquer l'agent. C'est l'expression opérationnelle de l'Article 14 de l'AI Act.\n\n## Implications opérationnelles\n\n- Kill switch documenté et testé (cf. ACF-07).\n- Seuils d'escalade explicites par criticité (cf. ACF-09).\n- Tests réguliers de la reprise humaine (drill quarterly minimum sur criticité haute).",
+        "en": "## Principle\n\nAn agent's autonomy is a conditional privilege, never a vested right. At any moment, an authorised operator must be able to freeze, redirect or revoke the agent. This is the operational expression of AI Act Article 14.\n\n## Operational implications\n\n- Documented and tested kill switch (cf. ACF-07).\n- Explicit escalation thresholds by criticality (cf. ACF-09).\n- Regular human-takeover drills (at minimum quarterly for high criticality)."
+      },
+      "related_fiches": ["ACF-07", "ACF-09", "ACF-14"],
+      "related_dimensions": ["D3", "D6"]
+    },
+    {
+      "id": "P4",
+      "code": "P4",
+      "title": {
+        "fr": "Proportionnalité de la gouvernance",
+        "en": "Proportional Governance"
+      },
+      "summary": {
+        "fr": "L'intensité du contrôle doit être proportionnelle à l'autonomie réelle de l'agent et à la criticité des décisions qu'il prend.",
+        "en": "Control intensity must be proportional to the agent's actual autonomy and to the criticality of the decisions it takes."
+      },
+      "doctrine": {
+        "fr": "## Principe\n\nUn agent N0 (assistance) ne mérite pas le même appareil de contrôle qu'un agent N3 (exécution autonome). Surinvestir le contrôle sur un agent à faible autonomie coûte sans bénéfice ; sous-investir sur un agent à forte autonomie crée une exposition réglementaire et opérationnelle.\n\n## Implications opérationnelles\n\n- Matrice de criticité ACF-02 calibrée par dimension × business impact.\n- Sélection de contrôles depuis `ddao-controls-mapping` (niveau × risque → contrôles).\n- Revue annuelle de la calibration.",
+        "en": "## Principle\n\nAn N0 agent (assistance) does not warrant the same control apparatus as an N3 agent (autonomous execution). Over-investing controls on a low-autonomy agent wastes resources; under-investing on a high-autonomy agent creates regulatory and operational exposure.\n\n## Operational implications\n\n- ACF-02 criticality matrix calibrated by dimension × business impact.\n- Control selection from `ddao-controls-mapping` (level × risk → controls).\n- Annual recalibration review."
+      },
+      "related_fiches": ["ACF-02", "ACF-11", "ACF-15"],
+      "related_dimensions": ["D1", "D5"]
+    }
+  ]
+}

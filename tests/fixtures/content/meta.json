@@ -1,0 +1,9 @@
+{
+  "framework_version": "1.0",
+  "content_build": "2026-06-06T00:00:00Z",
+  "content_hash": "sha256:fixture-hash",
+  "permanent_archive_url": "https://archive.acfstandard.com/doctrine/v1.0/",
+  "rules_version": "2026-06",
+  "locales": ["fr", "en"],
+  "fallback_locale": "en"
+}

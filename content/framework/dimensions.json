@@ -1,0 +1,83 @@
+{
+  "version": "1.0",
+  "dimensions": [
+    {
+      "id": "D1",
+      "code": "D1",
+      "title": { "fr": "Stratégie & gouvernance", "en": "Strategy & governance" },
+      "description": {
+        "fr": "Alignement de l'usage de l'IA agentique avec la stratégie d'entreprise, gouvernance dédiée, sponsoring exécutif.",
+        "en": "Alignment of agentic AI usage with the business strategy, dedicated governance, executive sponsorship."
+      },
+      "practices": {
+        "fr": "Comité IA constitué. Stratégie agentique documentée. Sponsor exécutif identifié. Budget annuel sanctuarisé. Indicateurs d'usage suivis au COMEX.",
+        "en": "AI committee constituted. Documented agentic strategy. Identified executive sponsor. Ring-fenced annual budget. Usage metrics tracked at exec level."
+      }
+    },
+    {
+      "id": "D2",
+      "code": "D2",
+      "title": { "fr": "Doctrine & cadre", "en": "Doctrine & framework" },
+      "description": {
+        "fr": "Adoption d'un cadre de référence (ACF® ou équivalent), publication d'une doctrine interne, formation des équipes.",
+        "en": "Adoption of a reference framework (ACF® or equivalent), publication of an internal doctrine, team training."
+      },
+      "practices": {
+        "fr": "Cadre de référence formalisé. Doctrine interne publiée et accessible. Plan de formation déployé. Fiches méthodologiques en usage opérationnel.",
+        "en": "Formalised reference framework. Published and accessible internal doctrine. Training plan deployed. Methodological cards in operational use."
+      }
+    },
+    {
+      "id": "D3",
+      "code": "D3",
+      "title": { "fr": "Conception & contrôle technique", "en": "Design & technical control" },
+      "description": {
+        "fr": "Conception sécurisée des agents (mandats, kill switches, observabilité), maîtrise des modèles fondation utilisés.",
+        "en": "Secure agent design (mandates, kill switches, observability), mastery of the foundation models in use."
+      },
+      "practices": {
+        "fr": "Mandat formel pour tout agent N2+. Kill switch documenté et testé. Observabilité bout en bout. Inventaire des modèles utilisés.",
+        "en": "Formal mandate for every N2+ agent. Documented and tested kill switch. End-to-end observability. Inventory of models in use."
+      }
+    },
+    {
+      "id": "D4",
+      "code": "D4",
+      "title": { "fr": "Responsabilités & rôles", "en": "Accountability & roles" },
+      "description": {
+        "fr": "Définition explicite des rôles (DDAO, DPO, RSSI, Compliance Officer, Business Owner) avec RACI clair sur les décisions agentiques.",
+        "en": "Explicit role definitions (DDAO, DPO, CISO, Compliance Officer, Business Owner) with a clear RACI on agentic decisions."
+      },
+      "practices": {
+        "fr": "DDAO nommé par agent N2+. RACI publié. Process de sign-off documenté par criticité. Délégations formelles.",
+        "en": "DDAO appointed per N2+ agent. Published RACI. Documented sign-off process by criticality. Formal delegations."
+      }
+    },
+    {
+      "id": "D5",
+      "code": "D5",
+      "title": { "fr": "Conformité réglementaire", "en": "Regulatory compliance" },
+      "description": {
+        "fr": "Maîtrise des obligations AI Act, RGPD, DORA, NIS2, ISO 42001 selon le secteur et la juridiction.",
+        "en": "Mastery of AI Act, GDPR, DORA, NIS2, ISO 42001 obligations according to sector and jurisdiction."
+      },
+      "practices": {
+        "fr": "Inventaire IA tenu à jour. Qualification par système (provider/deployer, controller/processor). DPIA pour systèmes haut risque. Registre Article 49 si haut risque. Plan de mise en conformité Digital Omnibus.",
+        "en": "Up-to-date AI inventory. System-level qualification (provider/deployer, controller/processor). DPIA for high-risk systems. Article 49 register if high-risk. Digital Omnibus compliance roadmap."
+      }
+    },
+    {
+      "id": "D6",
+      "code": "D6",
+      "title": { "fr": "Audit & amélioration continue", "en": "Audit & continuous improvement" },
+      "description": {
+        "fr": "Audit interne périodique des agents en production, revue des incidents, mise à jour de la doctrine.",
+        "en": "Periodic internal audit of agents in production, incident review, doctrine updates."
+      },
+      "practices": {
+        "fr": "Audit annuel a minima. Revue trimestrielle d'incidents. Mise à jour de la doctrine documentée. Post-mortems publiés en interne.",
+        "en": "Annual audit minimum. Quarterly incident review. Documented doctrine updates. Post-mortems published internally."
+      }
+    }
+  ]
+}

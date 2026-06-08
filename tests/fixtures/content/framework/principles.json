@@ -1,0 +1,14 @@
+{
+  "version": "1.0",
+  "principles": [
+    {
+      "id": "P1",
+      "code": "P1",
+      "title": { "fr": "Souveraineté décisionnelle", "en": "Decision Sovereignty" },
+      "summary": { "fr": "S1", "en": "S1" },
+      "doctrine": { "fr": "D1", "en": "D1" },
+      "related_fiches": ["ACF-00"],
+      "related_dimensions": ["D1"]
+    }
+  ]
+}

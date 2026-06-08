@@ -1,0 +1,58 @@
+{
+  "version": "2026-06",
+  "last_update": "2026-06-07",
+  "cases": [
+    {
+      "id": "gdpr-controller-internal-use",
+      "triggers": {
+        "enum_match": {
+          "usage_audience": ["internal"],
+          "personal_data_level": ["standard", "sensitive_special"]
+        },
+        "negation_aware": true
+      },
+      "role": "controller",
+      "confidence_base": "high",
+      "rationale_template": "Internal usage with the entity defining purposes and means of processing → controller."
+    },
+    {
+      "id": "gdpr-processor-b2b",
+      "triggers": {
+        "enum_match": {
+          "usage_audience": ["third_party_b2b"],
+          "personal_data_level": ["standard", "sensitive_special"]
+        },
+        "keyword_patterns": [
+          "on behalf of", "pour le compte de", "data processor", "sous-traitant"
+        ],
+        "negation_aware": true
+      },
+      "role": "processor",
+      "confidence_base": "medium",
+      "rationale_template": "B2B usage where the entity acts on behalf of another controller → processor (subject to Article 28 contract)."
+    },
+    {
+      "id": "gdpr-controller-consumer",
+      "triggers": {
+        "enum_match": {
+          "usage_audience": ["public_consumer"],
+          "personal_data_level": ["standard", "sensitive_special"]
+        },
+        "negation_aware": true
+      },
+      "role": "controller",
+      "confidence_base": "high",
+      "rationale_template": "Public consumer-facing service handling personal data → controller (typically)."
+    },
+    {
+      "id": "gdpr-na-no-personal-data",
+      "triggers": {
+        "enum_match": { "personal_data_level": ["none"] },
+        "negation_aware": true
+      },
+      "role": "not_applicable",
+      "confidence_base": "high",
+      "rationale_template": "No personal data declared → GDPR qualification not applicable. Confirm with the team that no PII transits the agent."
+    }
+  ]
+}

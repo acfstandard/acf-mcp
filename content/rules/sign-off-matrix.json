@@ -1,0 +1,84 @@
+{
+  "version": "2026-06",
+  "last_update": "2026-06-07",
+  "rules": [
+    {
+      "criticality": "low",
+      "personal_data_level": "none",
+      "financial_exposure": "none",
+      "required": {
+        "security": false,
+        "privacy": false,
+        "compliance": false,
+        "legal": false,
+        "business_sponsor": true,
+        "board": false
+      }
+    },
+    {
+      "criticality": "medium",
+      "personal_data_level": "standard",
+      "financial_exposure": "low_operation",
+      "required": {
+        "security": true,
+        "privacy": true,
+        "compliance": false,
+        "legal": false,
+        "business_sponsor": true,
+        "board": false
+      }
+    },
+    {
+      "criticality": "high",
+      "personal_data_level": "standard",
+      "financial_exposure": "high_corporate",
+      "required": {
+        "security": true,
+        "privacy": true,
+        "compliance": true,
+        "legal": true,
+        "business_sponsor": true,
+        "board": false
+      }
+    },
+    {
+      "criticality": "high",
+      "personal_data_level": "sensitive_special",
+      "financial_exposure": "none",
+      "required": {
+        "security": true,
+        "privacy": true,
+        "compliance": true,
+        "legal": true,
+        "business_sponsor": true,
+        "board": false
+      }
+    },
+    {
+      "criticality": "critical",
+      "personal_data_level": "sensitive_special",
+      "financial_exposure": "high_corporate",
+      "required": {
+        "security": true,
+        "privacy": true,
+        "compliance": true,
+        "legal": true,
+        "business_sponsor": true,
+        "board": true
+      }
+    },
+    {
+      "criticality": "critical",
+      "personal_data_level": "sensitive_special",
+      "financial_exposure": "medium_contract",
+      "required": {
+        "security": true,
+        "privacy": true,
+        "compliance": true,
+        "legal": true,
+        "business_sponsor": true,
+        "board": true
+      }
+    }
+  ]
+}

@@ -1,0 +1,165 @@
+{
+  "version": "2026-06",
+  "last_update": "2026-06-07",
+  "applicable_dates": [
+    { "category": "annex-iii", "applicable_from": "2027-12-02", "deferred": true }
+  ],
+  "categories": [
+    {
+      "id": "annex-iii-1a-biometric-identity",
+      "title": "Remote biometric identification (Annex III item 1a)",
+      "triggers": {
+        "keyword_patterns": [
+          "facial recognition", "reconnaissance faciale", "biometric identification",
+          "identification biométrique", "real-time biometric", "biométrie temps réel"
+        ],
+        "enum_match": {
+          "ai_act_triggers": ["biometric_identity"],
+          "personal_data_level": ["sensitive_special"]
+        },
+        "negation_aware": true
+      },
+      "obligations": ["art-5", "art-9", "art-10", "art-11", "art-12", "art-13", "art-14", "art-15", "art-26", "art-27"],
+      "fiches": ["ACF-02", "ACF-09", "ACF-11"],
+      "confidence_base": "high",
+      "requires_human_review": true
+    },
+    {
+      "id": "annex-iii-2-critical-infrastructure",
+      "title": "Critical infrastructure (Annex III item 2)",
+      "triggers": {
+        "keyword_patterns": [
+          "energy grid", "réseau énergétique", "water supply", "approvisionnement en eau",
+          "gas distribution", "distribution gaz", "critical infrastructure", "infrastructure critique"
+        ],
+        "enum_match": { "ai_act_triggers": ["critical_infrastructure"] },
+        "negation_aware": true
+      },
+      "obligations": ["art-9", "art-10", "art-11", "art-12", "art-13", "art-14", "art-15"],
+      "fiches": ["ACF-02", "ACF-07", "ACF-09", "ACF-11"],
+      "confidence_base": "high",
+      "requires_human_review": true
+    },
+    {
+      "id": "annex-iii-3-educational",
+      "title": "Education and vocational training (Annex III item 3)",
+      "triggers": {
+        "keyword_patterns": [
+          "grading", "notation", "admission", "student assessment", "évaluation étudiant",
+          "school admission", "examen", "exam scoring"
+        ],
+        "enum_match": {
+          "ai_act_triggers": ["educational_assessment"],
+          "processing_purposes": ["education"]
+        },
+        "negation_aware": true
+      },
+      "obligations": ["art-9", "art-10", "art-11", "art-12", "art-13", "art-14", "art-15"],
+      "fiches": ["ACF-02", "ACF-09", "ACF-11"],
+      "confidence_base": "high",
+      "requires_human_review": true
+    },
+    {
+      "id": "annex-iii-4-employment",
+      "title": "Employment, workers management, access to self-employment (Annex III item 4)",
+      "triggers": {
+        "keyword_patterns": [
+          "recruitment", "recrutement", "hiring", "embauche", "cv screening",
+          "filtrage cv", "performance review", "évaluation salarié", "promotion"
+        ],
+        "enum_match": {
+          "ai_act_triggers": ["employment_recruitment"],
+          "processing_purposes": ["hr"]
+        },
+        "negation_aware": true
+      },
+      "obligations": ["art-9", "art-10", "art-11", "art-12", "art-13", "art-14", "art-15"],
+      "fiches": ["ACF-02", "ACF-09", "ACF-11"],
+      "confidence_base": "high",
+      "requires_human_review": true
+    },
+    {
+      "id": "annex-iii-5b-credit-scoring",
+      "title": "Credit scoring (Annex III item 5b)",
+      "triggers": {
+        "keyword_patterns": [
+          "credit", "scoring", "loan", "prêt", "lending", "octroi de crédit",
+          "credit decision", "décision crédit", "creditworthiness", "solvabilité"
+        ],
+        "structured_flags": ["financial_exposure:high_corporate"],
+        "enum_match": {
+          "ai_act_triggers": ["credit_scoring"],
+          "processing_purposes": ["core_financial"]
+        },
+        "negation_aware": true
+      },
+      "obligations": ["art-9", "art-10", "art-11", "art-12", "art-13", "art-14", "art-15", "art-86"],
+      "fiches": ["ACF-02", "ACF-09", "ACF-10", "ACF-11"],
+      "confidence_base": "high",
+      "requires_human_review": true
+    },
+    {
+      "id": "annex-iii-5c-insurance-pricing",
+      "title": "Insurance risk assessment & pricing — life/health (Annex III item 5c)",
+      "triggers": {
+        "keyword_patterns": [
+          "insurance pricing", "tarification assurance", "underwriting",
+          "health insurance", "assurance santé", "life insurance", "assurance vie"
+        ],
+        "negation_aware": true
+      },
+      "obligations": ["art-9", "art-10", "art-11", "art-12", "art-13", "art-14", "art-15"],
+      "fiches": ["ACF-02", "ACF-09", "ACF-11"],
+      "confidence_base": "medium",
+      "requires_human_review": true
+    },
+    {
+      "id": "annex-iii-6-law-enforcement",
+      "title": "Law enforcement (Annex III item 6)",
+      "triggers": {
+        "keyword_patterns": [
+          "law enforcement", "police", "predictive policing", "evidence assessment",
+          "évaluation des preuves", "investigation", "enquête"
+        ],
+        "enum_match": { "ai_act_triggers": ["law_enforcement"] },
+        "negation_aware": true
+      },
+      "obligations": ["art-9", "art-10", "art-11", "art-12", "art-13", "art-14", "art-15", "art-27"],
+      "fiches": ["ACF-02", "ACF-09", "ACF-11"],
+      "confidence_base": "high",
+      "requires_human_review": true
+    },
+    {
+      "id": "annex-iii-7-migration-asylum",
+      "title": "Migration, asylum and border control (Annex III item 7)",
+      "triggers": {
+        "keyword_patterns": [
+          "asylum", "asile", "migration", "border control", "contrôle frontalier",
+          "visa decision", "décision visa"
+        ],
+        "enum_match": { "ai_act_triggers": ["migration_asylum"] },
+        "negation_aware": true
+      },
+      "obligations": ["art-9", "art-10", "art-11", "art-12", "art-13", "art-14", "art-15"],
+      "fiches": ["ACF-02", "ACF-09", "ACF-11"],
+      "confidence_base": "high",
+      "requires_human_review": true
+    },
+    {
+      "id": "annex-iii-8-justice-democracy",
+      "title": "Administration of justice and democratic processes (Annex III item 8)",
+      "triggers": {
+        "keyword_patterns": [
+          "court decision", "décision de justice", "judicial", "judiciaire",
+          "election", "élection", "voting"
+        ],
+        "enum_match": { "ai_act_triggers": ["justice_democracy"] },
+        "negation_aware": true
+      },
+      "obligations": ["art-9", "art-10", "art-11", "art-12", "art-13", "art-14", "art-15"],
+      "fiches": ["ACF-02", "ACF-09", "ACF-11"],
+      "confidence_base": "high",
+      "requires_human_review": true
+    }
+  ]
+}

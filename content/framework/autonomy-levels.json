@@ -1,0 +1,73 @@
+{
+  "version": "1.0",
+  "levels": [
+    {
+      "id": "N0",
+      "code": "N0",
+      "title": { "fr": "N0 — Assistance", "en": "N0 — Assistance" },
+      "description": {
+        "fr": "L'agent suggère, l'humain décide systématiquement. L'humain garde la main sur chaque action exécutoire.",
+        "en": "The agent suggests; the human decides systematically. The human keeps control over every executable action."
+      },
+      "controls": {
+        "fr": "Contrôle humain à 100%. Pas de kill switch nécessaire (l'humain est le kill switch). Logs des suggestions et des décisions humaines correspondantes.",
+        "en": "100% human control. No kill switch needed (the human is the kill switch). Logs of suggestions and the matching human decisions."
+      },
+      "examples": {
+        "fr": "Copilot d'écriture, recommandation produit non-personnalisée, assistant de rédaction d'emails.",
+        "en": "Writing copilot, non-personalised product recommendation, email drafting assistant."
+      }
+    },
+    {
+      "id": "N1",
+      "code": "N1",
+      "title": { "fr": "N1 — Recommandation supervisée", "en": "N1 — Supervised recommendation" },
+      "description": {
+        "fr": "L'agent propose une décision argumentée. L'humain valide ou rejette. Chaque action exécutoire passe par une validation humaine, mais sur une option déjà cadrée.",
+        "en": "The agent proposes a justified decision. The human validates or rejects. Every executable action goes through a human validation, but on an already-shaped option."
+      },
+      "controls": {
+        "fr": "Validation humaine ≥ 95% des actions. Audit log de toutes les propositions (acceptées et rejetées). Métriques d'acceptation suivies (signal de drift).",
+        "en": "Human validation ≥ 95% of actions. Audit log of all proposals (accepted and rejected). Acceptance metrics tracked (drift signal)."
+      },
+      "examples": {
+        "fr": "Tri de tickets support avec proposition de réponse, suggestion de pricing avec validation manager, qualification de leads avec sign-off commercial.",
+        "en": "Support ticket triage with proposed reply, pricing suggestion with manager sign-off, lead qualification with sales sign-off."
+      }
+    },
+    {
+      "id": "N2",
+      "code": "N2",
+      "title": { "fr": "N2 — Exécution conditionnelle", "en": "N2 — Conditional execution" },
+      "description": {
+        "fr": "L'agent décide et exécute dans un périmètre borné. Au-delà des seuils définis dans le mandat, il escalade obligatoirement à un humain.",
+        "en": "The agent decides and executes within a bounded perimeter. Above the thresholds defined in the mandate, it must escalate to a human."
+      },
+      "controls": {
+        "fr": "Mandat formel obligatoire (cf. ACF-12). Seuils numériques et qualitatifs explicites. Kill switch actif et testé trimestriellement. Audit log structuré.",
+        "en": "Mandatory formal mandate (cf. ACF-12). Explicit numeric and qualitative thresholds. Active kill switch tested quarterly. Structured audit log."
+      },
+      "examples": {
+        "fr": "Agent de remboursement client jusqu'à 200€ sans validation, agent de réordonnancement stock dans la fourchette, agent de modération auto-correction.",
+        "en": "Customer refund agent up to €200 without sign-off, stock reordering agent within a window, auto-correcting moderation agent."
+      }
+    },
+    {
+      "id": "N3",
+      "code": "N3",
+      "title": { "fr": "N3 — Exécution autonome", "en": "N3 — Autonomous execution" },
+      "description": {
+        "fr": "L'agent décide et exécute sans validation humaine préalable, dans le périmètre du mandat. Le contrôle humain reste possible a posteriori et le kill switch reste actif.",
+        "en": "The agent decides and executes without prior human validation, within the mandate perimeter. Human control remains possible after the fact and the kill switch stays active."
+      },
+      "controls": {
+        "fr": "Mandat formel approfondi, gouvernance renforcée (revue mensuelle minimum), kill switch multi-niveaux testé mensuellement, audit log à granularité décision, métriques de dérive en temps réel.",
+        "en": "Deep formal mandate, reinforced governance (monthly review minimum), multi-level kill switch tested monthly, decision-grained audit log, real-time drift metrics."
+      },
+      "examples": {
+        "fr": "Agent de trading algorithmique borné, agent de routage opérationnel critique, agent de gestion d'incident L1.",
+        "en": "Bounded algorithmic trading agent, critical operational routing agent, L1 incident management agent."
+      }
+    }
+  ]
+}

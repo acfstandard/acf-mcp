@@ -1,0 +1,148 @@
+{
+  "version": "2026-06",
+  "last_update": "2026-06-07",
+  "mappings": [
+    {
+      "level": "N0",
+      "risk": "low",
+      "recommended_controls": [
+        {
+          "title": "Suggestion logging",
+          "description": "Log every suggestion produced by the agent and the human acceptance/rejection.",
+          "owner_role": "ddao",
+          "frequency": "on_event",
+          "evidence_artifact": "suggestion-log.csv"
+        }
+      ],
+      "ddao_controls": [
+        {
+          "control_id": "ACF-CTRL-001",
+          "control_type": "detective",
+          "fiche_reference": "ACF-05",
+          "implementation_note": "Append-only log with timestamp, user id (hashed), suggestion id, accept/reject."
+        }
+      ]
+    },
+    {
+      "level": "N2",
+      "risk": "high",
+      "recommended_controls": [
+        {
+          "title": "Formal agent mandate",
+          "description": "Mandate document signed by DDAO defining decision perimeter, escalation thresholds and kill switch.",
+          "owner_role": "ddao",
+          "frequency": "quarterly",
+          "evidence_artifact": "agent-mandate.pdf"
+        },
+        {
+          "title": "Kill switch quarterly drill",
+          "description": "Test the agent freeze/redirect/revoke path on a non-production replay every quarter.",
+          "owner_role": "ciso",
+          "frequency": "quarterly",
+          "evidence_artifact": "drill-report.pdf"
+        },
+        {
+          "title": "Decision register",
+          "description": "Immutable timestamped log of every decision with structured inputs, output, doctrine version.",
+          "owner_role": "ddao",
+          "frequency": "on_event",
+          "evidence_artifact": "decision-register.jsonl"
+        },
+        {
+          "title": "Quarterly risk review",
+          "description": "Review of risk profile, drift metrics and incidents over the quarter.",
+          "owner_role": "ddao",
+          "frequency": "quarterly",
+          "evidence_artifact": "risk-review-minutes.pdf"
+        }
+      ],
+      "ddao_controls": [
+        {
+          "control_id": "ACF-CTRL-101",
+          "control_type": "preventive",
+          "fiche_reference": "ACF-12",
+          "implementation_note": "Mandate templates calibrated by sector; review frequency tied to criticality."
+        },
+        {
+          "control_id": "ACF-CTRL-102",
+          "control_type": "corrective",
+          "fiche_reference": "ACF-07",
+          "implementation_note": "Kill switch with 3 levels: freeze (instant), redirect (≤5min), revoke (≤1h)."
+        },
+        {
+          "control_id": "ACF-CTRL-103",
+          "control_type": "detective",
+          "fiche_reference": "ACF-05",
+          "implementation_note": "Decision register format aligned with Article 49 register for high-risk systems."
+        }
+      ]
+    },
+    {
+      "level": "N3",
+      "risk": "critical",
+      "recommended_controls": [
+        {
+          "title": "Deep formal mandate with monthly review",
+          "description": "Mandate signed by DDAO + business sponsor + CISO + DPO; monthly review of perimeter, thresholds and drift.",
+          "owner_role": "ddao",
+          "frequency": "monthly",
+          "evidence_artifact": "agent-mandate-deep.pdf"
+        },
+        {
+          "title": "Multi-level kill switch — monthly drill",
+          "description": "3-level kill switch tested monthly (freeze / redirect / revoke). Drill results reviewed at next governance committee.",
+          "owner_role": "ciso",
+          "frequency": "monthly",
+          "evidence_artifact": "drill-report-monthly.pdf"
+        },
+        {
+          "title": "Real-time drift monitoring",
+          "description": "Live dashboards tracking decision distribution, escalation rate, error rate with alerts on threshold breach.",
+          "owner_role": "ciso",
+          "frequency": "on_event",
+          "evidence_artifact": "drift-dashboard-link"
+        },
+        {
+          "title": "Independent audit",
+          "description": "Annual independent audit of the agent (technical + governance + regulatory).",
+          "owner_role": "auditor",
+          "frequency": "annual",
+          "evidence_artifact": "audit-report.pdf"
+        },
+        {
+          "title": "Board-level reporting",
+          "description": "Quarterly report to the board including incidents, drift, perimeter changes and remediation status.",
+          "owner_role": "business_owner",
+          "frequency": "quarterly",
+          "evidence_artifact": "board-report.pdf"
+        }
+      ],
+      "ddao_controls": [
+        {
+          "control_id": "ACF-CTRL-201",
+          "control_type": "governance",
+          "fiche_reference": "ACF-12",
+          "implementation_note": "Quad sign-off (DDAO + sponsor + CISO + DPO) gates every mandate change."
+        },
+        {
+          "control_id": "ACF-CTRL-202",
+          "control_type": "preventive",
+          "fiche_reference": "ACF-07",
+          "implementation_note": "3-level kill switch with monthly drill and post-drill remediation log."
+        },
+        {
+          "control_id": "ACF-CTRL-203",
+          "control_type": "detective",
+          "fiche_reference": "ACF-08",
+          "implementation_note": "Live observability dashboards (decision distribution, escalation rate, error rate)."
+        },
+        {
+          "control_id": "ACF-CTRL-204",
+          "control_type": "corrective",
+          "fiche_reference": "ACF-14",
+          "implementation_note": "Documented incident playbook with named roles and SLA per criticality."
+        }
+      ]
+    }
+  ]
+}

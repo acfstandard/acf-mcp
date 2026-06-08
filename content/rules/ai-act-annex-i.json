@@ -1,0 +1,54 @@
+{
+  "version": "2026-06",
+  "last_update": "2026-06-07",
+  "applicable_dates": [
+    { "category": "annex-i", "applicable_from": "2028-08-02", "deferred": false }
+  ],
+  "categories": [
+    {
+      "id": "annex-i-medical-device",
+      "title": "Medical device safety component (Annex I — MDR / IVDR scope)",
+      "triggers": {
+        "keyword_patterns": [
+          "medical device", "dispositif médical", "diagnostic ai",
+          "diagnostic ia", "clinical decision support", "aide à la décision clinique"
+        ],
+        "negation_aware": true
+      },
+      "obligations": ["art-9", "art-10", "art-11", "art-12", "art-13", "art-14", "art-15", "art-43"],
+      "fiches": ["ACF-02", "ACF-09", "ACF-11"],
+      "confidence_base": "high",
+      "requires_human_review": true
+    },
+    {
+      "id": "annex-i-vehicle-safety",
+      "title": "Vehicle safety component (Annex I — type approval scope)",
+      "triggers": {
+        "keyword_patterns": [
+          "vehicle safety", "sécurité véhicule", "autonomous driving",
+          "conduite autonome", "adas", "lane keeping"
+        ],
+        "negation_aware": true
+      },
+      "obligations": ["art-9", "art-10", "art-11", "art-12", "art-13", "art-14", "art-15", "art-43"],
+      "fiches": ["ACF-02", "ACF-09", "ACF-11"],
+      "confidence_base": "high",
+      "requires_human_review": true
+    },
+    {
+      "id": "annex-i-machinery",
+      "title": "Machinery safety component (Annex I — Machinery Regulation)",
+      "triggers": {
+        "keyword_patterns": [
+          "industrial machinery", "machinerie industrielle", "robot safety",
+          "robotic safety", "sécurité robotique", "operator safety"
+        ],
+        "negation_aware": true
+      },
+      "obligations": ["art-9", "art-10", "art-11", "art-12", "art-13", "art-14", "art-15", "art-43"],
+      "fiches": ["ACF-02", "ACF-09", "ACF-11"],
+      "confidence_base": "medium",
+      "requires_human_review": true
+    }
+  ]
+}
