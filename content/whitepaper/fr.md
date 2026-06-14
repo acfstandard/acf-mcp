@@ -5,7 +5,7 @@ lang: fr
 version: "2.0"
 published_at: "2026-06"
 author: "Vincent Dorange"
-publisher: "AI CONSULTING — éditeur d'ACF®"
+publisher: "Vincent Dorange"
 classification: "Public"
 canonical_url: "https://acfstandard.com/whitepaper-fr.pdf"
 supersedes: "1.0 (décembre 2025)"
@@ -39,7 +39,7 @@ supersedes: "1.0 (décembre 2025)"
 
 ## 1. Résumé exécutif
 
-L'**Agentic Commerce Framework®** (ACF®) est le standard européen ouvert de gouvernance des systèmes agentiques autonomes opérant en environnement commercial. Édité par AI CONSULTING et porté par son fondateur Vincent Dorange, il a été conçu pour répondre à un constat opérationnel précis : les référentiels existants — EU AI Act, ISO/IEC 42001, NIST AI RMF, RGPD, COBIT — disent **ce qu'il faut faire** mais ne disent pas **comment opérer une décision agentique** au quotidien. ACF® comble ce vide.
+L'**Agentic Commerce Framework®** (ACF®) est le standard européen ouvert de gouvernance des systèmes agentiques autonomes déployés en production, dans toutes les industries et toutes les fonctions où un agent prend des décisions à conséquence (commerce, finance, services, santé, énergie, RH, marketing, opérations…). Porté par **Vincent Dorange**, il a été conçu pour répondre à un constat opérationnel précis : les référentiels existants — EU AI Act, ISO/IEC 42001, NIST AI RMF, RGPD, COBIT — disent **ce qu'il faut faire** mais ne disent pas **comment opérer une décision agentique** au quotidien. ACF® comble ce vide.
 
 ACF® articule **4 principes fondateurs**, **4 couches opérationnelles**, **4 niveaux d'autonomie** (N0 à N3), **17 fiches méthodologiques** prêtes à l'emploi et **un rôle nommé** — le **DDAO** (Designated Delegated Agent Officer) — qui porte la responsabilité humaine de chaque agent en production. L'ensemble s'adosse à une **traçabilité cryptographique** opposable (signatures Ed25519, chaîne de hachage SHA-256, horodatage qualifié RFC 3161) qui rend chaque décision agentique auditable, indépendamment de l'infrastructure du déployeur.
 
@@ -47,7 +47,7 @@ Le framework ne remplace pas les standards en vigueur. Il les **opérationnalise
 
 L'**enforcement haut-risque de l'EU AI Act entre en vigueur le 2 décembre 2027** pour les systèmes agentiques opérant dans les services essentiels (crédit, assurance, énergie, santé, justice). Les organisations qui auront déployé d'ici là des agents commerciaux sans cadre de gouvernance opérationnel se trouveront face à une obligation rétroactive de mise en conformité, sans documentation et sans piste d'audit recevable. ACF® est conçu pour qu'aucune ligne d'audit ne manque à ce moment-là.
 
-Cinq produits opérationnalisent le standard auprès des entreprises : **ACF Score** (auto-diagnostic), **ACF Auditor** (audit guidé 7 dimensions), **ACF Control** (dashboard de gouvernance temps réel), **ACF Compliance** (plateforme SaaS multi-juridiction), **ACF Certification** (attestation indépendante). Un sixième vecteur — le **serveur MCP `acf-mcp`** — expose la doctrine ACF® comme ressource native aux copilotes IA (Claude, Cursor, Windsurf, Continue) avec huit outils REASON déterministes signés.
+L'écosystème ACF® articule **quatre outils gratuits** à libre accès — **ACF Score** (auto-diagnostic), **ACF AI Act Checker** (vérification de conformité AI Act en quelques minutes), **Audit Flash de conformité** (diagnostic complet en 15 minutes) et **Plan Compliance personnalisé** — et **quatre produits commerciaux** : **ACF Auditor** (audit guidé 7 dimensions), **ACF Control** (dashboard de gouvernance temps réel), **ACF Compliance** (plateforme SaaS multi-juridiction), **ACF Certification** (attestation indépendante). Un dernier vecteur — le **serveur MCP `acf-mcp`** — expose la doctrine ACF® comme ressource native aux copilotes IA (Claude, Cursor, Windsurf, Continue) avec huit outils REASON déterministes signés.
 
 ---
 
@@ -63,7 +63,7 @@ Pour les marchands européens, le sujet n'est plus prospectif. Il est concurrent
 
 Aucun de ces protocoles ne dit qui supervise l'agent, selon quels critères, avec quelle traçabilité. Tous postulent qu'une équipe interne reconstituera cette couche au-dessus. Pour une PME, une ETI ou un groupe européen, **cette reconstitution n'est pas tenable** : elle suppose un dialogue continu entre la DSI, le DPO, le RSSI, la conformité, le métier et la direction juridique, sans grille de lecture commune et sans documentation type.
 
-Le résultat est observable sur le terrain. Sur un échantillon de cas rencontrés par AI CONSULTING fin 2025-début 2026, sur dix entreprises qui exploitent un agent en production :
+Le résultat est observable sur le terrain. Sur un échantillon de cas observés par l'auteur fin 2025-début 2026 — sous couverture de confidentialité, les organisations concernées ne pouvant être nommées —, sur dix entreprises qui exploitent un agent en production :
 
 - **8 sur 10** n'ont pas de personne nommément responsable des décisions de l'agent ;
 - **9 sur 10** ne disposent pas d'un journal cryptographiquement signé des décisions agentiques ;
@@ -253,33 +253,51 @@ Chaque fiche ACF® est mappée sur les cinq référentiels majeurs : **EU AI Act
 
 ---
 
-## 9. L'écosystème ACF® — six produits opérationnels
+## 9. L'écosystème ACF® — neuf vecteurs d'opérationnalisation
 
-ACF® n'est pas seulement un standard documentaire. Six produits, conçus pour des publics distincts, l'opérationnalisent.
+ACF® n'est pas seulement un standard documentaire. **Quatre outils gratuits**, **quatre produits commerciaux** et **un serveur MCP open source**, conçus pour des publics distincts, l'opérationnalisent.
 
-### 9.1. ACF Score — auto-diagnostic
+### Outils gratuits
+
+#### 9.1. ACF Score — auto-diagnostic de souveraineté
 
 Score composite de souveraineté décisionnelle calculé sur six dimensions. Outil libre d'accès, sans inscription. Cible : direction générale et direction informatique souhaitant un premier diagnostic en moins de 15 minutes. `www.acf-score.com`.
 
-### 9.2. ACF Auditor — audit guidé
+#### 9.2. ACF AI Act Checker — vérification de conformité AI Act
+
+Vérification rapide de l'exposition d'un système à l'EU AI Act : catégorisation du risque (prohibé / haut risque / risque limité / risque minimal), articles applicables et obligations associées. Outil libre d'accès. Cible : direction juridique, conformité, DPO en première lecture. `www.acfstandard.com/fr/compliance-checker`.
+
+#### 9.3. Audit Flash de conformité — diagnostic en 15 minutes
+
+Diagnostic compact, structuré sur les axes critiques de gouvernance agentique (supervision humaine, traçabilité, kill switch, rôle DDAO, registre des décisions). Restitution immédiate sous forme de rapport téléchargeable. Cible : équipe métier, sponsor projet, RCSI, DPO souhaitant cadrer un dossier avant un audit ou un comité. `compliance.acfstandard.com/fr/start`.
+
+#### 9.4. Plan Compliance personnalisé — feuille de route
+
+À partir des résultats de l'Audit Flash, génération d'une feuille de route de mise en conformité priorisée sur trois phases (cadrage / déploiement / régime de croisière), articulée sur les 17 fiches ACF® et ventilée par fonction interne (DG, DSI, RSSI, DPO, juridique, métier). Outil gratuit. Cible : DDAO en prise de poste, équipe transformation, comité de pilotage projet.
+
+### Produits commerciaux
+
+#### 9.5. ACF Auditor — audit guidé
 
 Plateforme d'audit guidé évaluant la maturité digitale et agentique d'une organisation sur sept dimensions pondérées (calibration sectorielle disponible). Génère un Agentic Readiness Score, un Score de Souveraineté détaillé et une feuille de route en trois phases. Cible : DSI et fonctions transformation.
 
-### 9.3. ACF Control — dashboard de gouvernance
+#### 9.6. ACF Control — dashboard de gouvernance
 
 Console temps réel qui surveille les KPIs de souveraineté avec gating adaptatif et escalade automatisée. Logs d'audit infalsifiables (Ed25519 + chaîne de hachage). Cible : équipes DSI/RSSI en exploitation.
 
-### 9.4. ACF Compliance — plateforme SaaS multi-juridiction
+#### 9.7. ACF Compliance — plateforme SaaS multi-juridiction
 
-Le produit SaaS phare de l'écosystème, accessible sur `compliance.acfstandard.com`. Plateforme RIN-compliant qui implémente chacune des correspondances ACF® / standards comme registre cryptographique multi-tenant. Trois plans : Starter (490 €/mois), Business (1 490 €/mois, populaire), Enterprise (sur devis). Auto-diagnostic gratuit en 15 minutes. Cible : RCSI, DPO, direction juridique, équipes conformité.
+Le produit SaaS phare de l'écosystème, accessible sur `compliance.acfstandard.com`. Plateforme qui implémente chacune des correspondances ACF® / standards comme registre cryptographique multi-tenant. Trois plans : Starter (490 €/mois), Business (1 490 €/mois, populaire), Enterprise (sur devis). Cible : RCSI, DPO, direction juridique, équipes conformité.
 
-### 9.5. ACF Certification — attestation indépendante
+#### 9.8. ACF Certification — attestation indépendante
 
 Programme de certification indépendante en trois niveaux (Level 1, 2, 3). Badge publiquement vérifiable, renouvellement annuel, monitoring continu. Cible : organisations souhaitant rendre leur posture de gouvernance opposable à des tiers (clients, régulateurs, assureurs).
 
-### 9.6. acf-mcp — serveur Model Context Protocol
+### Serveur MCP open source
 
-Serveur MCP officiel d'ACF®, publié en open source sous licence MIT (`github.com/aiconsulting06000-tech/acf-mcp`, package npm `acf-mcp`). Expose la doctrine ACF® — quatre principes, quatre niveaux d'autonomie, le rôle DDAO, les dix-sept fiches méthodologiques, cinq guides régulatoires (AI Act, GDPR, DORA, NIS2, ISO 42001), le glossaire et le whitepaper — comme ressources MCP natives consommables par Claude Desktop, Cursor, Windsurf, Continue.
+#### 9.9. acf-mcp — serveur Model Context Protocol
+
+Serveur MCP officiel d'ACF®, publié en open source sous licence MIT (package npm `acf-mcp` ; documentation développeur, manuel d'intégration et littérature de référence sur `acfstandard.io`). Expose la doctrine ACF® — quatre principes, quatre niveaux d'autonomie, le rôle DDAO, les dix-sept fiches méthodologiques, cinq guides régulatoires (AI Act, GDPR, DORA, NIS2, ISO 42001), le glossaire et le whitepaper — comme ressources MCP natives consommables par Claude Desktop, Cursor, Windsurf, Continue.
 
 Le serveur embarque **huit outils de raisonnement déterministes** (REASON tools), bâtis sur une base de connaissance versionnée et signée — sans appel LLM interne :
 
@@ -320,15 +338,17 @@ Le registre peut produire à la demande un export PDF certifié, signé électro
 
 ## 11. À propos & contact
 
-L'**Agentic Commerce Framework®** est créé par **Vincent Dorange**, expert en gouvernance des systèmes IA et fondateur d'AI CONSULTING. Le framework résulte de plusieurs années de recherche et de pratique sur la gouvernance des systèmes autonomes dans les environnements commerciaux européens, et de l'observation directe de leurs premiers déploiements en production en 2025-2026.
+L'**Agentic Commerce Framework®** est créé et porté par **Vincent Dorange**. Le framework résulte de plusieurs années de recherche et de pratique sur la gouvernance des systèmes autonomes, et de l'observation directe de leurs premiers déploiements en production en 2025-2026 — dans le commerce, la finance, les services aux entreprises, la santé et l'énergie.
 
-ACF® est édité par AI CONSULTING. Le standard documentaire (principes, fiches, doctrine) est diffusé sous licence ouverte. Les produits de l'écosystème (ACF Score, ACF Auditor, ACF Control, ACF Compliance, ACF Certification) sont commercialisés par leurs éditeurs respectifs. Le serveur MCP `acf-mcp` est open source (licence MIT) et publié sur npm.
+ACF® est édité par Vincent Dorange. Le standard documentaire (principes, fiches, doctrine) est diffusé sous licence ouverte. Les outils gratuits (ACF Score, ACF AI Act Checker, Audit Flash, Plan Compliance) et les produits commerciaux (ACF Auditor, ACF Control, ACF Compliance, ACF Certification) sont accessibles via les URL ci-dessous. Le serveur MCP `acf-mcp` est open source (licence MIT) et publié sur npm.
 
 **Contact**
 Site officiel — `www.acfstandard.com`
+AI Act Checker (gratuit) — `www.acfstandard.com/fr/compliance-checker`
+Audit Flash & Plan Compliance (gratuits) — `compliance.acfstandard.com/fr/start`
 ACF Compliance (SaaS) — `compliance.acfstandard.com`
 ACF Score (diagnostic libre) — `www.acf-score.com`
-Serveur MCP — `github.com/aiconsulting06000-tech/acf-mcp`
+Documentation développeur & MCP — `acfstandard.io`
 Standard ACF® · Édition juin 2026
 
 ---
@@ -341,7 +361,7 @@ L'ensemble des correspondances avec l'EU AI Act, ISO/IEC 42001, NIST AI RMF, RGP
 
 Le présent document est un livre blanc. Il n'a pas vocation à se substituer à un conseil juridique, comptable ou réglementaire. Toute mise en œuvre opérationnelle doit être adaptée au contexte de l'organisation et validée par les fonctions internes compétentes.
 
-© 2026 Agentic Commerce Framework® — Vincent Dorange · AI CONSULTING.
+© 2026 Agentic Commerce Framework® — Vincent Dorange.
 Tous droits réservés. ACF® est une marque déposée.
 
 ---
