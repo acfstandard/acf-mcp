@@ -1,7 +1,7 @@
 {
   "name": "acf-mcp",
-  "version": "1.0.3",
-  "mcpName": "io.github.aiconsulting06000-tech/acf-mcp",
+  "version": "1.0.4",
+  "mcpName": "io.github.acfstandard/acf-mcp",
   "description": "Official ACF® Model Context Protocol server — Agentic Commerce Framework governance copilot for AI assistants.",
   "type": "module",
   "main": "./dist/index.js",
@@ -52,11 +52,11 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/aiconsulting06000-tech/acf-mcp.git"
+    "url": "git+https://github.com/acfstandard/acf-mcp.git"
   },
-  "homepage": "https://github.com/aiconsulting06000-tech/acf-mcp#readme",
+  "homepage": "https://acfstandard.io",
   "bugs": {
-    "url": "https://github.com/aiconsulting06000-tech/acf-mcp/issues"
+    "url": "https://github.com/acfstandard/acf-mcp/issues"
   },
   "keywords": [
     "mcp",

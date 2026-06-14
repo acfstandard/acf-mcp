@@ -51,7 +51,7 @@ No API key — V1.0 is open access (cf. `Position stratégique` in the spec).
 `acf-mcp` is a **local stdio server** — there is no hosted HTTP endpoint to configure; it runs on the client via `npx` (above). Find it through:
 
 - **npm** — [`acf-mcp`](https://www.npmjs.com/package/acf-mcp)
-- **MCP Registry** — `io.github.aiconsulting06000-tech/acf-mcp`
+- **MCP Registry** — `io.github.acfstandard/acf-mcp`
 - **Smithery** — search `acf-mcp`
 
 ## Locales
@@ -82,4 +82,4 @@ https://acfstandard.com
 
 ## Contributing
 
-Issues + PRs welcome on https://github.com/aiconsulting06000-tech/acf-mcp. Doctrine modifications go through the maintainer review process.
+Issues + PRs welcome on https://github.com/acfstandard/acf-mcp. Developer documentation: https://acfstandard.io. Doctrine modifications go through the maintainer review process.

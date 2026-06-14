@@ -1,5 +1,14 @@
 # Changelog
 
+## 1.0.4 — 2026-06-14
+
+Repository moved from `aiconsulting06000-tech` to dedicated org `acfstandard`. The old URL keeps redirecting (GitHub 301) — existing clones and registry references stay alive.
+
+- `repository.url` → `https://github.com/acfstandard/acf-mcp`
+- `homepage` → `https://acfstandard.io` (new developer documentation site)
+- `mcpName` → `io.github.acfstandard/acf-mcp` (registry identity aligned with the new repo location)
+- `server.json` `name` + `websiteUrl` aligned. No source-level changes, same 245 tests.
+
 ## 1.0.3 — 2026-06-09
 
 Full V1.0 doctrine content + cryptographic integrity. Shipped content grows from 51 to 74 files; the doctrine is now ed25519-signed and independently verifiable.

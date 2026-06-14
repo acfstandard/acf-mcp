@@ -1,18 +1,18 @@
 {
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
-  "name": "io.github.aiconsulting06000-tech/acf-mcp",
+  "name": "io.github.acfstandard/acf-mcp",
   "description": "Official ACF® MCP server — Agentic Commerce Framework® governance copilot for AI assistants.",
   "repository": {
-    "url": "https://github.com/aiconsulting06000-tech/acf-mcp",
+    "url": "https://github.com/acfstandard/acf-mcp",
     "source": "github"
   },
-  "version": "1.0.3",
-  "websiteUrl": "https://acfstandard.com",
+  "version": "1.0.4",
+  "websiteUrl": "https://acfstandard.io",
   "packages": [
     {
       "registryType": "npm",
       "identifier": "acf-mcp",
-      "version": "1.0.3",
+      "version": "1.0.4",
       "transport": {
         "type": "stdio"
       }
