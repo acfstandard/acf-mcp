@@ -1,5 +1,5 @@
 /**
- * Canonical problem-first descriptions for the 11 V1.0 tools.
+ * Canonical problem-first descriptions for the 13 V1.0 tools (5 READ + 8 REASON).
  * Single source of truth — referenced by tools.ts and snapshot tests.
  */
 
@@ -28,6 +28,8 @@ export const TOOL_DESCRIPTIONS = {
     "When a DDAO needs concrete controls assigned to an autonomous agent — what kill switches, what escalation thresholds, what audit trails, what documentation, who owns each control — get the ACF® control set scoped to the agent's autonomy level and risk class, with double vocabulary (plain-English recommended_controls + ACF-canonical ddao_controls) for external clarity.",
   "acf.evaluate-agent-mandate":
     "When an existing agent mandate already exists (drafted or proposed for DDAO sign-off) and you need a first-pass audit before go-live or regulatory inspection — does it cover the decision perimeter, the escalation thresholds, the kill switch, the audit trail, the documentation duty? — get a structured preliminary verdict with strengths, gaps, required additions, and explicit gaps_to_validate for the human reviewer.",
+  "acf.map-to-standards":
+    "When a DDAO, an auditor or a compliance officer needs to know which articles of the major external standards (EU AI Act, GDPR, DORA, NIS2, ISO/IEC 42001) each ACF® methodological card connects to — and which ACF® cards a given external article relies on — get the reverse-index built from the same canonical mapping consumed by acf.regulation.article. Useful for cross-mapping audits, regulator filings, and ACF×AI Act conformity arguments. Pass a single fiche_id (e.g. ACF-07) for a focused view, or call without it for the complete 17×5 inventory.",
 } as const;
 
 export type AcfToolName = keyof typeof TOOL_DESCRIPTIONS;

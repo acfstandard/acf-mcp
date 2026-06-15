@@ -11,7 +11,7 @@ Agentic Commerce Framework® — first open governance standard for autonomous A
 
 `acf-mcp` exposes the ACF® doctrine — 4 principles, 4 autonomy levels, 6 maturity dimensions, the DDAO role, 17 methodological cards, 5 expert regulatory guides (AI Act, GDPR, DORA, NIS2, ISO 42001), the white paper and the glossary — as native MCP **Resources**, **Tools** and **Prompts** so any MCP client (Claude Desktop, Cursor, Windsurf, Continue…) can reason on top of it.
 
-It also ships **7 deterministic REASON tools** (built on a versioned knowledge base — no internal LLM call) that take a user case and return a structured ACF® governance assessment:
+It also ships **8 deterministic REASON tools** (built on a versioned knowledge base — no internal LLM call) that take a user case and return a structured ACF® governance assessment:
 
 - `acf.advisor` — generic case → structured advice (autonomy + risk + principles + fiches + first actions)
 - `acf.classify-agent` — **killer tool**: 10-field qualified-enum input → preliminary qualification (ACF level + criticality + AI Act role + GDPR status + obligations by lifecycle + DDAO controls + sign-off requirements)
@@ -20,6 +20,7 @@ It also ships **7 deterministic REASON tools** (built on a versioned knowledge b
 - `acf.map-ai-act-obligations` — full obligation set structured by lifecycle phase (pre-go-live / continuous / on-incident) with Digital Omnibus deferrals
 - `acf.assign-ddao-controls` — level × risk → recommended + ACF-canonical controls
 - `acf.evaluate-agent-mandate` — 8-check audit of an existing mandate
+- `acf.map-to-standards` — for each of the 17 ACF® cards, the reverse-index of articles from EU AI Act / GDPR / DORA / NIS2 / ISO 42001 that connect to it (the cross-mapping consumed by audits and regulator filings)
 
 Every REASON output is **signed**: `doctrine_version`, `doctrine_hash`, `doctrine_archive_url`, `regulatory_snapshot`, `generated_at`. Every REASON output is positioned as **preliminary qualification, not legal advice** — `requires_human_review: true` is constant in V1.0.
 

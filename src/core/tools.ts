@@ -21,6 +21,7 @@ import { handleIdentifyGapsTool, IdentifyGapsInputSchema } from "./tool-identify
 import { handleMapObligationsTool, MapObligationsInputSchema } from "./tool-map-obligations";
 import { handleAssignControlsTool, AssignControlsInputSchema } from "./tool-assign-controls";
 import { handleEvaluateMandateTool, EvaluateMandateInputSchema } from "./tool-evaluate-mandate";
+import { handleMapToStandardsTool, MapToStandardsInputSchema } from "./tool-map-to-standards";
 
 interface ToolHandler {
   name: string;
@@ -101,6 +102,12 @@ const HANDLERS: ToolHandler[] = [
     description: TOOL_DESCRIPTIONS["acf.evaluate-agent-mandate"],
     inputSchema: zodToJsonSchema(EvaluateMandateInputSchema),
     handle: handleEvaluateMandateTool,
+  },
+  {
+    name: "acf.map-to-standards",
+    description: TOOL_DESCRIPTIONS["acf.map-to-standards"],
+    inputSchema: zodToJsonSchema(MapToStandardsInputSchema),
+    handle: handleMapToStandardsTool,
   },
 ];
 
